@@ -1,0 +1,31 @@
+html,
+body,
+header,
+.view {
+    height: 100%;
+}
+
+.heading-container {
+    justify-content: space-between;
+}
+
+.heading {
+    padding-top: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.question {
+    padding-top: 60px;
+}
+
+.device:hover {
+    cursor: pointer;
+}
+
+.laptop-icon {
+    width: 100%;
+    height: auto;
+}
+
+

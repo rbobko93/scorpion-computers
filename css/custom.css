@@ -1,0 +1,12 @@
+.brand {
+    font-family: 'Roboto Medium', sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+.custom-nav {
+    box-shadow: 0 0 3px rgba(0,0,0,0.16);
+}
+
+
