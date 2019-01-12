@@ -15,7 +15,7 @@ header,
     align-items: center;
 }
 
-.question {
+.select-product {
     padding-top: 60px;
 }
 
@@ -28,4 +28,6 @@ header,
     height: auto;
 }
 
-
+.map {
+    height: 300px;
+}
