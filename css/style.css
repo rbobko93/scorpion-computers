@@ -17,3 +17,8 @@ header,
 .map {
     height: 300px;
 }
+
+.testimonial {
+    margin-right: 15%;
+    margin-left: 15%;
+}
