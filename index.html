@@ -18,7 +18,7 @@
 <body>
 <!-- Main navigation -->
 <header>
-    <nav class="navbar fixed-top navbar-expand-md navbar-light bg-white">
+    <nav class="navbar fixed-top navbar-expand-md navbar-light bg-white" id="navbar">
         <span class="navbar-brand">Scorpion Computers</span>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu"
                 aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,19 +27,19 @@
         <div class="collapse navbar-collapse" id="navbarMenu">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link text-warning" href="#">Services</a>
+                    <a href="javascript:scrollToTargetAdjusted('contact')" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item  bg-warning">
+                    <a class="nav-link text-white" href="javascript:scrollToTargetAdjusted('services')">Services</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#contact" class="nav-link">Contact</a>
+                    <a href="javascript:scrollToTargetAdjusted('about-us')" class="nav-link">About Us</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">About Us</a>
+                    <a href="javascript:scrollToTargetAdjusted('reviews')" class="nav-link">Reviews</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Reviews</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Remote Support</a>
+                    <a href="https://www.fastsupport.com/" target="_blank" rel="noopener noreferrer" class="nav-link">Remote Support</a>
                 </li>
             </ul>
         </div>
@@ -60,7 +60,7 @@
             </div>
         </div>
         <div class="d-flex justify-content-center">
-            <a href="#select-product" class="text-dark" role="button">
+            <a href="javascript:scrollToTargetAdjusted('contact')" class="text-dark" role="button">
                 <i class="fas fa-angle-down fa-lg"></i>
             </a>
         </div>
@@ -72,47 +72,47 @@
 <main id="main">
 
     <!-- SELECT-PRODUCT -->
-    <section class="container mb-5 select-product" id="select-product">
-        <div class="d-flex flex-column align-items-center text-center">
-            <h2>Which product would you like to repair?</h2>
-            <div class="row w-100 justify-content-center">
-                <div class="card col d-flex flex-column hoverable col-xl-2 col-md-3 col-5 m-2 device">
-                    <div class="d-flex justify-content-center p-2">
-                        <img src="img/png/smartphone.png" alt="Smartphone icon" class="">
-                    </div>
-                    <h5 class="mb-0">iPhone</h5>
-                </div>
-                <div class="card col d-flex flex-column hoverable col-xl-2 col-md-3 col-5 m-2 device">
-                    <div class="d-flex justify-content-center p-2">
-                        <img src="img/png/Laptop.png" alt="Laptop icon" class="laptop-icon">
-                    </div>
-                    <h5 class="mb-0">Laptop</h5>
-                </div>
-                <div class="card col d-flex flex-column hoverable col-xl-2 col-md-3 col-5 m-2 device">
-                    <div class="d-flex justify-content-center p-2">
-                        <img src="img/png/Desktop.png" alt="Desktop icon" class="laptop-icon">
-                    </div>
-                    <h5 class="mb-0">Desktop</h5>
-                </div>
-                <div class="card col d-flex flex-column hoverable col-xl-2 col-md-3 col-5 m-2 device">
-                    <div class="d-flex justify-content-center p-2">
-                        <img src="img/png/PS4.png" alt="Game console icon">
-                    </div>
-                    <h5 class="mb-0">Game Consoles</h5>
-                </div>
-                <div class="card col d-flex flex-column hoverable col-xl-2 col-md-3 col-5 m-2 device">
-                    <div class="d-flex justify-content-center p-2">
-                        <img src="img/png/More.png" alt="More icon" class="laptop-icon">
-                    </div>
-                    <h5 class="mb-0">Other</h5>
-                </div>
-            </div>
-        </div>
-    </section>
+    <!--<section class="container mb-5 select-product" id="select-product">-->
+        <!--<div class="d-flex flex-column align-items-center text-center">-->
+            <!--<h2>Which product would you like to repair?</h2>-->
+            <!--<div class="row w-100 justify-content-center">-->
+                <!--<div class="card col d-flex flex-column hoverable col-xl-2 col-md-3 col-5 m-2 device">-->
+                    <!--<div class="d-flex justify-content-center p-2">-->
+                        <!--<img src="img/png/smartphone.png" alt="Smartphone icon" class="">-->
+                    <!--</div>-->
+                    <!--<h5 class="mb-0">iPhone</h5>-->
+                <!--</div>-->
+                <!--<div class="card col d-flex flex-column hoverable col-xl-2 col-md-3 col-5 m-2 device">-->
+                    <!--<div class="d-flex justify-content-center p-2">-->
+                        <!--<img src="img/png/Laptop.png" alt="Laptop icon" class="laptop-icon">-->
+                    <!--</div>-->
+                    <!--<h5 class="mb-0">Laptop</h5>-->
+                <!--</div>-->
+                <!--<div class="card col d-flex flex-column hoverable col-xl-2 col-md-3 col-5 m-2 device">-->
+                    <!--<div class="d-flex justify-content-center p-2">-->
+                        <!--<img src="img/png/Desktop.png" alt="Desktop icon" class="laptop-icon">-->
+                    <!--</div>-->
+                    <!--<h5 class="mb-0">Desktop</h5>-->
+                <!--</div>-->
+                <!--<div class="card col d-flex flex-column hoverable col-xl-2 col-md-3 col-5 m-2 device">-->
+                    <!--<div class="d-flex justify-content-center p-2">-->
+                        <!--<img src="img/png/PS4.png" alt="Game console icon">-->
+                    <!--</div>-->
+                    <!--<h5 class="mb-0">Game Consoles</h5>-->
+                <!--</div>-->
+                <!--<div class="card col d-flex flex-column hoverable col-xl-2 col-md-3 col-5 m-2 device">-->
+                    <!--<div class="d-flex justify-content-center p-2">-->
+                        <!--<img src="img/png/More.png" alt="More icon" class="laptop-icon">-->
+                    <!--</div>-->
+                    <!--<h5 class="mb-0">Other</h5>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</section>-->
     <!-- SELECT PRODUCT END -->
 
     <!-- CONTACT -->
-    <section class="bg-warning p-4 pb-5" id="contact">
+    <section class="bg-warning p-4" id="contact">
         <div class="container d-flex flex-column align-items-center text-center">
             <h2 class="mb-4 font-weight-light">Contact</h2>
             <div class="row w-100">
@@ -500,7 +500,7 @@
     <!-- Copyright -->
     <div class="footer-copyright py-3 d-flex flex-row justify-content-around">
         <div>
-            © 2018 Copyright:<a href="https://mdbootstrap.com/education/bootstrap/"> MDBootstrap.com</a>
+            © 2018 Copyright:<a href="#"> MDBootstrap.com</a>
         </div>
         <div>
             <a class="fb-ic" href="https://www.facebook.com/ScorpionComputers/" target="_blank" rel="noopener noreferrer">
@@ -518,5 +518,6 @@
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
 <script src="js/bootstrap.bundle.js"></script>
+<script src="js/custom.js"></script>
 </body>
 </html>
