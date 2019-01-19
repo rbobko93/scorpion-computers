@@ -30,7 +30,7 @@
                     <a class="nav-link text-warning" href="#">Services</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Contact</a>
+                    <a href="#contact" class="nav-link">Contact</a>
                 </li>
                 <li class="nav-item">
                     <a href="#" class="nav-link">About Us</a>
@@ -51,16 +51,16 @@
             <h1>We can fix your</h1>
             <h1>iPhone</h1>
             <div class="d-flex flex-row">
-                <a href="#" class="btn btn-dark">
+                <a href="#" class="btn btn-dark" role="button">
                     <span class="text-warning">See prices</span>
                 </a>
                 <a href="#" class="btn btn-warning">
-                    <span class="text-dark">Contact Us</span>
+                    <span class="text-dark" role="button">Contact Us</span>
                 </a>
             </div>
         </div>
         <div class="d-flex justify-content-center">
-            <a href="#select-product" class="text-dark">
+            <a href="#select-product" class="text-dark" role="button">
                 <i class="fas fa-angle-down fa-lg"></i>
             </a>
         </div>
@@ -70,7 +70,9 @@
 
 <!--Main Layout-->
 <main id="main">
-    <div class="container mb-5 select-product" id="select-product">
+
+    <!-- SELECT-PRODUCT -->
+    <section class="container mb-5 select-product" id="select-product">
         <div class="d-flex flex-column align-items-center text-center">
             <h2>Which product would you like to repair?</h2>
             <div class="row w-100 justify-content-center">
@@ -106,22 +108,24 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
+    <!-- SELECT PRODUCT END -->
 
-    <section class="contact bg-warning p-4" id="contact">
+    <!-- CONTACT -->
+    <section class="bg-warning p-4 pb-5" id="contact">
         <div class="container d-flex flex-column align-items-center text-center">
-            <h2 class="mb-4">Contact</h2>
+            <h2 class="mb-4 font-weight-light">Contact</h2>
             <div class="row w-100">
-                <div class="col col-xl-6 col-lg-12 col-md-12 col-sm-12 map bg-danger">
+                <div class="col col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12 map bg-danger">
 
                 </div>
-                <div class="col col-xl-6 col-lg-12 col-md-12 col-sm-12">
+                <div class="col col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12">
                     <div class="row h-100">
-                        <div class="col col-md-6 col-sm-12 d-flex flex-column justify-content-between">
+                        <div class="col col-md-6 col-sm-12 col-12 d-flex flex-column justify-content-center">
                             <div class="row">
                                 <div class="col p-3">
                                     <h6>(866) 376-9490</h6>
-                                    <a href="#" class="btn btn-success">
+                                    <a href="#" class="btn btn-success" role="button">
                                         <span class="text-white">Call Us</span>
                                     </a>
                                 </div>
@@ -129,14 +133,14 @@
                             <div class="row">
                                 <div class="col p-3">
                                     <h6>2636 East Allegheny Avenue Philadelphia PA 19134</h6>
-                                    <a href="#" class="btn btn-dark">
+                                    <a href="#" class="btn btn-dark" role="button">
                                         <span class="text-warning">Show Directions</span>
                                     </a>
                                 </div>
                             </div>
                         </div>
-                        <div class="col col-md-6 col-sm-12 p-3 d-flex flex-column justify-content-center">
-                            <h4>Store hours</h4>
+                        <div class="col col-md-6 col-sm-12 col-12 p-3 d-flex flex-column justify-content-center">
+                            <h5>Store hours</h5>
                             <span>Weekdays: 10AM - 7PM</span>
                             <span>Saturdays: 10AM - 5PM</span>
                             <span>Sundays: Closed</span>
@@ -146,6 +150,194 @@
             </div>
         </div>
     </section>
+    <!-- CONTACT END -->
+
+    <!-- SERVICES -->
+    <section class="services bg-white p-4" id="services">
+        <div class="container d-flex flex-column align-items-center text-center">
+            <h2 class="mb-4">Services</h2>
+            <ul class="nav justify-content-center nav-tabs" id="services-tab" role="tablist">
+                <li class="nav-item">
+                    <a href="#iphone" class="nav-link active" id="iphone-tab" data-toggle="tab" role="tab"
+                       aria-controls="iphone">
+                        <span class="text-dark">iPhone</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#laptop" class="nav-link" id="laptop-tab" data-toggle="tab" role="tab"
+                       aria-controls="laptop">
+                        <span class="text-dark">Laptop</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#desktop" class="nav-link" id="desktop-tab" data-toggle="tab" role="tab"
+                       aria-controls="desktop">
+                        <span class="text-dark">Desktop</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#game-consoles" class="nav-link" id="game-consoles-tab" data-toggle="tab" role="tab"
+                       aria-controls="game-consoles">
+                        <span class="text-dark">Game Consoles</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#other" class="nav-link" id="other-tab" data-toggle="tab" role="tab" aria-controls="other">
+                        <span class="text-dark">Other</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="tab-content container-fluid mb-2" id="services-tab-content">
+                <div class="tab-pane fade show active" id="iphone" role="tabpanel" aria-labelledby="iphone-tab">
+                    <div class="row justify-content-center">
+                        <div class="col col-xl-8">
+                            <table class="table table-striped z-depth-1">
+                                <thead>
+                                <tr>
+                                    <th scope="col">Service</th>
+                                    <th scope="col">Price</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>iPhone 5 screen replacement</td>
+                                    <td>$55</td>
+                                </tr>
+                                <tr>
+                                    <td>iPhone 5 screen replacement</td>
+                                    <td>$55</td>
+                                </tr>
+                                <tr>
+                                    <td>iPhone 5 screen replacement</td>
+                                    <td>$55</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="laptop" role="tabpanel" aria-labelledby="laptop-tab">
+                    <div class="row justify-content-center">
+                        <div class="col col-xl-8">
+                            <table class="table table-striped">
+                                <thead>
+                                <tr>
+                                    <th scope="col">Service</th>
+                                    <th scope="col">Price</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>iPhone 5 screen replacement</td>
+                                    <td>$55</td>
+                                </tr>
+                                <tr>
+                                    <td>iPhone 5 screen replacement</td>
+                                    <td>$55</td>
+                                </tr>
+                                <tr>
+                                    <td>iPhone 5 screen replacement</td>
+                                    <td>$55</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="desktop" role="tabpanel" aria-labelledby="desktop-tab">
+                    <div class="row justify-content-center">
+                        <div class="col col-xl-8">
+                            <table class="table table-striped">
+                                <thead>
+                                <tr>
+                                    <th scope="col">Service</th>
+                                    <th scope="col">Price</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>iPhone 5 screen replacement</td>
+                                    <td>$55</td>
+                                </tr>
+                                <tr>
+                                    <td>iPhone 5 screen replacement</td>
+                                    <td>$55</td>
+                                </tr>
+                                <tr>
+                                    <td>iPhone 5 screen replacement</td>
+                                    <td>$55</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="game-consoles" role="tabpanel" aria-labelledby="game-consoles-tab">
+                    <div class="row justify-content-center">
+                        <div class="col col-xl-8">
+                            <table class="table table-striped">
+                                <thead>
+                                <tr>
+                                    <th scope="col">Service</th>
+                                    <th scope="col">Price</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>iPhone 5 screen replacement</td>
+                                    <td>$55</td>
+                                </tr>
+                                <tr>
+                                    <td>iPhone 5 screen replacement</td>
+                                    <td>$55</td>
+                                </tr>
+                                <tr>
+                                    <td>iPhone 5 screen replacement</td>
+                                    <td>$55</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="other" role="tabpanel" aria-labelledby="other-tab">
+                    <div class="row justify-content-center">
+                        <div class="col col-xl-8">
+                            <table class="table table-striped">
+                                <thead>
+                                <tr>
+                                    <th scope="col">Service</th>
+                                    <th scope="col">Price</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>iPhone 5 screen replacement</td>
+                                    <td>$55</td>
+                                </tr>
+                                <tr>
+                                    <td>iPhone 5 screen replacement</td>
+                                    <td>$55</td>
+                                </tr>
+                                <tr>
+                                    <td>iPhone 5 screen replacement</td>
+                                    <td>$55</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex flex-column justify-content-center align-items-center">
+                <h5>Didn't find what you were looking for?</h5>
+                <a href="#" class="btn btn-success" role="button">
+                    <span class="text-white">Call Us</span>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- SERVICES END -->
 </main>
 <!--Main Layout-->
 
